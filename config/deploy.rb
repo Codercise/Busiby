@@ -1,10 +1,10 @@
 require 'bundler/capistrano'
-set :user, 'username'
-set :domain, 'web.host.com'
-set :applicationdir, "appdir"
+set :user, 'nickhayden'
+set :domain, 'busiby.carsekyx.eu'
+set :applicationdir, "/var/www/busiby.git"
 
 set :scm, 'git'
-set :repository,  "ssh://[user@]host/~/projectdir.git"
+set :repository,  "git@github.com:Haydos585/Busiby.git"
 set :git_enable_submodules, 1 # if you have vendored rails
 set :branch, 'master'
 set :git_shallow_clone, 1
@@ -20,6 +20,7 @@ set :deploy_to, applicationdir
 set :deploy_via, :export
 
 # additional settings
+ssh_options[:forward_agent] = true
 default_run_options[:pty] = true  # Forgo errors when deploying from windows
 #ssh_options[:keys] = %w(/home/user/.ssh/id_rsa)            # If you are using ssh_keysset :chmod755, "app config db lib public vendor script script/* public/disp*"set :use_sudo, false
 
