@@ -2,7 +2,7 @@ require 'bundler/capistrano'
 require 'deploy_tasks.rb'
 set :user, 'nickhayden'
 set :domain, 'carsekyx.eu'
-set :applicationdir, "/var/www"
+set :applicationdir, "/var/www/Busiby.git"
 
 set :scm, 'git'
 set :repository,  "git@github.com:Haydos585/Busiby.git"
