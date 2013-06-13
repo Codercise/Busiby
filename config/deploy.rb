@@ -27,9 +27,13 @@ default_run_options[:pty] = true  # Forgo errors when deploying from windows
 
 # Passenger
 namespace :deploy do
-  task :start do ; end
-  task :stop do ; end
+  task :start, :roles => :app, :except => { :no_release => true } do
+    run "cd #{current_path} && bundle exec passenger start --socket /tmp/passenger.socket --daemonize --environment production"
+  end
+  task :stop, :roles => :app, :except => { :no_release => true } do
+    run "cd #{current_path} && bundle exec passenger stop --pid-file tmp/pids/passenger.pid"
+  end
   task :restart, :roles => :app, :except => { :no_release => true } do
-    run "#{try_sudo} touch #{File.join(current_path,'tmp','restart.txt')}"
+    run "#{try_sudo} touch #{File.join(current_path, 'tmp', 'restart.txt')}"
   end
 end
