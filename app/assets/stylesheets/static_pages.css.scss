@@ -1,0 +1,30 @@
+// Place all the styles related to the static_pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.header-nav {
+  background: #B9121B;
+  max-height: 125px;
+
+  .hero-nav {
+    margin: 0;
+    h2 {
+      color: #F6E497;
+      display: inline-block;
+      padding-top: 2.8%;
+    }
+    img.marketing.logo {
+      float: left;
+      margin: 0.85% 2% 0 0;
+    }
+  }
+  .minor-nav {
+    ul.right{
+      min-width: 40%;
+      li {
+        display: inline-block;
+        list-style-type: none;
+        margin-left: 2%;
+      }
+    }
+  }
+}
