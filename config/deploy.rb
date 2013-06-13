@@ -1,5 +1,5 @@
 require 'bundler/capistrano'
-require 'deploy_tasks.rb'
+#require 'deploy_tasks.rb'
 set :user, 'nickhayden'
 set :domain, 'carsekyx.eu'
 set :applicationdir, "/var/www/Busiby.git"
