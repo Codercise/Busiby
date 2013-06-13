@@ -1,7 +1,7 @@
 require 'bundler/capistrano'
 set :user, 'nickhayden'
 set :domain, 'carsekyx.eu'
-set :applicationdir, "/var/www/busiby.git"
+set :applicationdir, "/var/www"
 
 set :scm, 'git'
 set :repository,  "git@github.com:Haydos585/Busiby.git"
