@@ -1,29 +1,107 @@
 // Place all the styles related to the static_pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+//Header styles
+$busiby-dark-red: #4C1B1B;
+$busiby-light-red: #B9121B;
+$busiby-middle-cream: #F6E497;
+$busiby-white: #FCFAE1;
+$busiby-brown: #BD8D46;
+$busiby-nav-cream: #F6E497;
+$busiby-footer-black: #272727;
 .header-nav {
-  background: #B9121B;
+  background: $busiby-light-red;
   max-height: 125px;
 
   .hero-nav {
-    margin: 0;
+    margin: 0.35% 0 1.45% 0;
     h2 {
-      color: #F6E497;
+      color: $busiby-nav-cream;
       display: inline-block;
       padding-top: 2.8%;
     }
     img.marketing.logo {
-      float: left;
       margin: 0.85% 2% 0 0;
     }
   }
   .minor-nav {
-    ul.right{
-      min-width: 40%;
+    float:right;
+    margin-top: 4%;
+    ul {
+      font-size: 109%;
+      margin-top: 2.25%;
+      width: 100%;
       li {
+        color: $busiby-nav-cream;
+        display: inline;
+        margin-left: 3%;
+        letter-spacing: 0.05em;
+        a {
+          color: $busiby-nav-cream;
+        }
+      }
+    }
+  }
+}
+//Footer style
+$footer-height: 60px;
+.push {
+  margin-bottom:60px;
+}
+.footer {
+  background: $busiby-footer-black;
+  color: $busiby-white;
+  height: $footer-height;
+
+  p {
+    margin: 0;
+    padding: 1.75% 0;
+  }
+}
+.body-container {
+  padding-bottom: $footer-height;
+  .body-content {
+    .body-hero-section {
+      p {
+        font-size: 110%;
+      }
+      img {
+        float: right;
+        margin-top: 2.25%;
+      }
+    }
+    .new-update {
+      margin: 5% auto;
+      .panel.whats-new{
+        background: $busiby-light-red;
+      }
+      .panel.whats-new p {
+        color: $busiby-white;
+        margin-bottom: 0;
+        text-align: center;
+      }
+      .inline {
         display: inline-block;
-        list-style-type: none;
-        margin-left: 2%;
+      }
+      .arrow-right {
+        width: 0;
+        height: 0;
+        border-top: 20px solid transparent;
+        border-bottom: 20px solid transparent;
+        display: inline;
+        border-left: 20px solid green;
+      }
+    }
+    .about-text {
+      p.busiby-video {
+        color: #aaa;
+        text-align: center;
+      }
+    }
+    .pitch-busiby {
+      .columns p {
+        font-size: 0.85em;
+        width: 80%
       }
     }
   }
