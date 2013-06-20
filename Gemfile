@@ -6,9 +6,13 @@ gem 'rails', '4.0.0.rc1'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 
+# Use Rspec for testing
+gem 'rspec'
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0.rc1'
 gem 'zurb-foundation', '4.2.1'
+gem "font-awesome-sass-rails", "~> 3.0.2.2"
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
@@ -40,7 +44,7 @@ end
 # gem 'unicorn'
 
 # Use Capistrano for deployment
-gem 'capistrano', group: :development
+gem 'capistrano'
 gem 'passenger'
 
 # Use debugger
