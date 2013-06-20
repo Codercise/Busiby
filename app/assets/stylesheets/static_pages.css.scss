@@ -15,11 +15,6 @@ $busiby-footer-black: #272727;
 
   .hero-nav {
     margin: 0.35% 0 1.45% 0;
-    h2 {
-      color: $busiby-nav-cream;
-      display: inline-block;
-      padding-top: 2.8%;
-    }
     img.marketing.logo {
       margin: 0.85% 2% 0 0;
     }
@@ -32,12 +27,12 @@ $busiby-footer-black: #272727;
       margin-top: 2.25%;
       width: 100%;
       li {
-        color: $busiby-nav-cream;
+        color: $busiby-white;
         display: inline;
         margin-left: 3%;
         letter-spacing: 0.05em;
         a {
-          color: $busiby-nav-cream;
+          color: $busiby-white;
         }
       }
     }
